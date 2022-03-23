@@ -15,7 +15,10 @@ that sets environment variables and then displays a command prompt.
 
 You might have to add the Visual Studio path 
 (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community) to the 
-"Path" of the environment variables manually.
+"Path" of the environment variables manually. To use it properly, you might
+have to add the following components installed with your visual studio:
+1. C++ Clang Compiler for Windows (13.0.0)
+2. C++ Clang-cl for v143 build tools (x64/x86)
 
 Next, go to the subdirectory windows. Edit the file configure.mk. If you 
 want 32-bit Unicode change the 2 in the line UCS=2 to a 4.
